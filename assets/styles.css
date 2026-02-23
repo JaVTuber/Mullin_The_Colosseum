@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap');
+
+
+/* General Styles */
+
+:root {
+	--light: #fff;
+	--bg0: #3E3F29;
+	--bg1: #7D8D86;
+	--bg2: #BCA88D;
+	--lg1: #F1F0E4;
+}
+
+* {
+	font-family: "Texturina", serif;
+	font-optical-sizing: auto;
+	font-weight: 300;
+	font-style: normal;
+
+	margin: 0;
+	color: var(--light);
+}
+
+body {
+	margin: 0 20%;
+}
+
+#visuals {
+	padding: 1%;
+	box-sizing: border-box;
+	height: 65vh;
+	background-color: #0f0;
+}
+
+#GUI {
+	padding: 1%;
+	box-sizing: border-box;
+	height: 35vh;
+	background-color: var(--bg0);
+}
+
+
+/* Status: Choosing */
+
+#CHOOSING {
+	padding: 0 15%;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+/* Status: Fighting */
+
+#FIGHTING {
+}
+
+.chName {
+	display: inline;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+.menu {
+	display: flex;
+}
+
+#cont {
+	padding: 1% 2% 2% 2%;
+	border: 3px solid var(--light);
+}
+
+#mons {
+	flex-basis: 60%;
+}
+
+#obj {
+	flex-basis: 40%;
+}
+
+fieldset {
+	flex-basis: 50%;
+}
+
+.noTop {
+	padding-top: 0;
+}
+
+legend {
+	font-size: 1.5em;
+}
+
+button {
+	background-color: var(--bg1);
+	border: 1.5px solid var(--light);
+	padding-top: 0;
+	margin-top: 5px;
+	font-size: 1em;
+	text-align: center;
+	transition: 0.3s;
+}
+
+button:hover {
+	background-color: var(--bg2);
+}
+
+button:active {
+	background-color: var(--lg1);
+}
+
+.btnAction {
+	width: 49%;
+}
+
+table {
+	margin: 0;
+}
+
+td {
+	padding-right: 12.5px;
+}
+
+.indexer {
+	padding: 0 5px;
+}
+
+.indexer:hover {
+	cursor: pointer;
+}
