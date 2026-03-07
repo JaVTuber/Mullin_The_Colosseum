@@ -2,18 +2,20 @@ import * as attack from "./attacks.js";
 
 // CLASSES
 class Charachter {
-	constructor(name, ability, desc, hp, recPMana, maxPMana, maxMMana, spells, bag, turn) {
+	constructor(name, id, ability, desc, hp, recPMana, maxPMana, maxMMana, spells, bag, turn, icon) {
 		this.name = name;
+		this.id = id;
 		this.ability = ability;
 		this.desc = desc;
 		this.hp = hp;
 		this.recPMana = recPMana;
 		this.maxPMana = maxPMana;
-		this.curPMana = this.maxPmana;
+		this.curPMana = this.maxPMana;
 		this.maxMMana = maxMMana;
 		this.spells = spells;
 		this.bag = bag;
 		this.turn = turn;
+		this.icon = icon;
 	}
 }
 
@@ -32,10 +34,9 @@ class Summon {
 
 class Weapon extends Summon {
 	constructor(name, desc, ability, abilityDesc, hp, atkB, defB, atks, pCost, mCost) {
-		super(name, desc, hp, atkB, defB, atks, pCost);
+		super(name, desc, hp, atkB, defB, atks, pCost, mCost);
 		this.ability = ability;
 		this.abilityDesc = abilityDesc;
-		this.mCost = mCost;
 	}
 }
 
@@ -74,12 +75,12 @@ const omega = new Weapon("Omega", "", undefined, "", 2, 2500, 0.9, [], 9);
 const caos = new Weapon("Caos", "", undefined, "", 1, 1, 1, [], 1);
 
 // CHARACHTERS DEFINITIONS
-const mulin = new Charachter("Mulín Lilith", undefined, "", 10000, 8, 60, 25, [], [], undefined);
-const samanta = new Charachter("Mulín Samanta", undefined, "", 9000, 7, 55, 24, [], [], undefined);
-const sabrina = new Charachter("Mulín Sabrina", undefined, "", 8500, 6, 50, 23, [], [], undefined);
-const fiona = new Charachter("Mulín Fiona", undefined, "", 6000, 4, 40, 20, [], [], undefined);
-const priscilla = new Charachter("Mulín Priscilla", undefined, "", 7500, 5, 44, 22, [], [], undefined);
-const wanda = new Charachter("Mulín Wanda", undefined, "", 7500, 5, 46, 21, [], [], undefined);
+const mulin = new Charachter("Mulín Lilith", "mulin", undefined, "", 10000, 8, 60, 25, [], [], undefined, "MLi");
+const samanta = new Charachter("Mulín Samanta", "samanta", undefined, "", 9000, 7, 55, 24, [], [], undefined, "MSm");
+const sabrina = new Charachter("Mulín Sabrina", "sabrina", undefined, "", 8500, 6, 50, 23, [], [], undefined, "MSb");
+const fiona = new Charachter("Burro Fiona", "fiona", undefined, "", 6000, 4, 40, 20, [], [], undefined, "BFi");
+const priscilla = new Charachter("Mulín Priscilla", "priscilla", undefined, "", 7500, 5, 44, 22, [], [], undefined, "MPr");
+const wanda = new Charachter("Mulín Wanda", "wanda", undefined, "", 7500, 5, 46, 21, [], [], undefined, "MWa");
 
 // LISTS
 export const summons = [ifrit, shiva, alexander, odin, tonsberry, hades, leviatan, titan, tifon, chocomog, bahamut, neoBahamut, rahamut, kuja, fenix, lcdlmr, anima, jades, cactus, meteoro, malvoro];

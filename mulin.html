@@ -10,29 +10,14 @@
 	</head>
 	<body>
 		<section id="visuals">
-			<p>Hello World!</p>
+			<canvas id="canvas"></canvas>
 		</section>
 		<section id="GUI">
-			<div id="CHOOSING">
+			<article id="CHOOSING">
 				<div id="p1">
 					<fieldset>
 						<legend>Jugador/a 1</legend>
-						<table>
-							<tr>
-								<td class="player1" id="mulin">MLi</td>
-								<td class="player1" id="samanta">MSm</td>
-								<td class="player1" id="sabrina">MSb</td>
-							</tr>
-							<tr>
-								<td class="player1" id="fiona">MFi</td>
-								<td class="player1" id="priscilla">MPr</td>
-								<td class="player1" id="wanda">MWa</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td class="player1" id="random">Rand</td>
-							</tr>
-						</table>
+						<table class="player1" id="optionsP1"></table>
 					</fieldset>
 				</div>
 				<div id="start">
@@ -41,26 +26,11 @@
 				<div id="p2">
 					<fieldset>
 						<legend>Jugador/a 2</legend>
-						<table>
-							<tr>
-								<td class="player2" id="mulin">MLi</td>
-								<td class="player2" id="samanta">MSm</td>
-								<td class="player2" id="sabrina">MSb</td>
-							</tr>
-							<tr>
-								<td class="player2" id="fiona">MFi</td>
-								<td class="player2" id="priscilla">MPr</td>
-								<td class="player2" id="wanda">MWa</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td class="player2" id="random">Rand</td>
-							</tr>
-						</table>
+						<table class="player2" id="optionsP2"></table>
 					</fieldset>
 				</div>
-			</div>
-			<div id="FIGHTING">
+			</article>
+			<article id="FIGHTING">
 				<div id="cont">
 					<div id="chTitle">
 						<h2 class="chName">Mulín</h3>
@@ -68,13 +38,13 @@
 					</div>
 					<div id="menu" class="menu">
 						<div id="mons" class="menu">
-							<fieldset class="noTop">
+							<fieldset id="weapons" class="noTop">
 								<legend>Weapon</legend>
 								<p>Habilidad</p>
 								<button class="btnAction">Ataque (5/10)</button>
 								<button class="btnAction">Cambio</button>
 							</fieldset>
-							<fieldset>
+							<fieldset id="summons">
 								<legend>Summon</legend>
 								<button class="btnAction">Ataque</button>
 								<button class="btnAction">Ataque</button>
@@ -84,14 +54,14 @@
 							</fieldset>
 						</div>
 						<div id="obj" class="menu">
-							<fieldset>
+							<fieldset id="spells">
 								<legend>Hechizos</legend>
 								<button>Espekto Partonus</button>
 								<button>Hollo blanco</button>
 								<button>Conviertete en Taza</button>
 								<p class="indexer">></p>
 							</fieldset>
-							<fieldset class="noTop">
+							<fieldset id="theBag" class="noTop">
 								<legend>Bolsita</legend>
 								<table>
 									<tr>
@@ -112,7 +82,10 @@
 						</div>
 					</div>			
 				</div>
-			</div>
+			</article>
+			<article id="RESULTS">
+				
+			</article>
 		</section>
 	</body>
 </html>
